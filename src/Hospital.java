@@ -30,6 +30,29 @@ import java.util.Scanner;
     }
      
      
+     public static Patient insertdata(){
+         Patient p=new Patient();
+         System.out.print("enter Patient data: \n-ID: ");
+         p.setId(input.nextInt());
+         System.out.print("-NAME: ");
+         String n=input2.nextLine();
+         p.setName(n);
+         System.out.print("-Birthdate: ");
+         String birth=input2.nextLine();
+         p.setBirthdate(birth);
+         System.out.print("-Doctor: ");
+         String doc=input2.nextLine();
+         p.setDoctor(doc);
+         System.out.print("-Prescription: ");
+         String prec=input2.nextLine();
+         p.setPrescription(prec);
+         System.out.print("-Reciept: ");
+         p.setReciept(input.nextInt());
+         System.out.print("-Payment: ");
+         p.setPayment(input.nextDouble());
+         
+         return p;
+     }
 
      
      public static void binarysearch(DLL dl,int id){
